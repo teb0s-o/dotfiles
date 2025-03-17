@@ -1,0 +1,54 @@
+[colors.primary]
+background = "#1d1f21"
+foreground = "#c5c8c6"
+
+[colors.normal]
+black   = "#1d1f21"
+red     = "#cc6666"
+green   = "#b5bd68"
+yellow  = "#de935f"
+blue    = "#81a2be"
+magenta = "#b294bb"
+cyan    = "#8abeb7"
+white   = "#c5c8c6"
+
+[colors.bright]
+black   = "#969896" 
+red     = "#f2777a"
+green   = "#a3be8c"
+yellow  = "#f0c674"
+blue    = "#88c0d0"
+magenta = "#b48ead"
+cyan    = "#88c0d0"
+white   = "#cccccc"
+
+[colors.cursor]
+text    = "#1d1f21"
+cursor  = "#c5c8c6"
+
+[colors.selection]
+text    = "#c5c8c6"
+background = "#373b41"
+
+[font.normal]
+family = "SauceCodeProNerdFont"
+style  = "SemiBold"
+
+[font.bold]
+family = "SauceCodeProNerdFont"
+style  = "Black"
+
+[font.italic]
+family = "SauceCodeProNerdFont"
+style  = "SemiBoldItalic"
+
+[window]
+#opacity = 0.90
+
+[keyboard]
+bindings = [
+  { key = "X", mods = "Control|Shift", action = "ToggleViMode" },
+]
+
+[cursor]
+vi_mode_style = { shape = "Block" , blinking = "Never" }

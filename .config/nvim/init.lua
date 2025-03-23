@@ -27,6 +27,7 @@ require("lazy").setup({
     {"ColinKennedy/hybrid2.nvim", priority = 1000 , config = false, opts = ...},
     {"stevearc/oil.nvim", opts = ...},
     {"nvim-telescope/telescope.nvim", tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},
+    {"saghen/blink.cmp", version = '0.14.0', opts = ...},
 
   },
   -- Configure any other settings here. See the documentation for more details.
@@ -41,7 +42,7 @@ vim.cmd("set list")
 vim.cmd("set listchars=space:·")
 
 -- Toggle buffers
-vim.keymap.set("n", "<C-Space>", "<CMD>b#<CR>")
+--vim.keymap.set("n", "<C-Space>", "<CMD>b#<CR>")
 vim.keymap.set("n", "<leader>.", "<CMD>bn<CR>")
 vim.keymap.set("n", "<leader>,", "<CMD>bp<CR>")
 
@@ -82,4 +83,11 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find f
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+
+require("blink.cmp").setup({
+  sources = {
+    default = { 'buffer', 'path' },
+    min_keyword_length = 8,
+  },
+})
 

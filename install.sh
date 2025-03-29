@@ -112,7 +112,7 @@ pacman -S --noconfirm \
 #  xfce4 \
 
 # Install yay packages
-echo "Installing yay from the aur..."
+echo "Installing yay from pacman..."
 pacman -S --noconfirm yay
 
 echo "Installing yay packages..."

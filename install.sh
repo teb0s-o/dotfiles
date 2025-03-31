@@ -123,6 +123,7 @@ yay -S --noconfirm \
 #
 #System tools
   htop-vim \
+  betterlockscreen \
 #
 #Web
   foorp-bin \
